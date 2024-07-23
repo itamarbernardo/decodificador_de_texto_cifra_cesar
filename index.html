@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="assets/logo.png" alt="Imagem com formato da letra a minúscula">
+    </header>    
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo__entrada">
+            <textarea name="" id="" class="apresentacao__conteudo__entrada__input" placeholder="Digite seu texto"></textarea>
+            <img src="assets/Frame 1.png" alt="Icone com aviso para escrever apenas palavras sem acento" />
+            <div class="apresentacao__links">
+                <a onclick="criptografar()" class="botao__azul apresentacao__links__navegacao">
+                    Criptografar
+                </a>
+                <a onclick="descriptografar()" class="botao__branco apresentacao__links__navegacao">
+                    Descriptografar
+                </a>
+            </div>
+        </section>
+        <section class="apresentacao__conteudo__saida">
+            <div id="sem_texto" class="apresentacao__conteudo__saida__img" >
+                <img src="assets/High quality products 1 1.svg" alt="Nenhuma mensagem encontrada">
+                <img src="assets/Frame 5.png" alt="Digite o texto que você quer criptografar">
+            </div>
+            <div id="com_texto" class="apresentacao__conteudo__saida__input hidden">
+                <textarea  name="" id="texto_saida"></textarea>
+                <a onclick="copiar()" class="botao__branco apresentacao__links__navegacao">Copiar</a>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+
+    <script src="app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --cor-primaria: #F3F5FC; 
+    --cor-secundaria: #0A3871;
+    /* --cor-terciaria:  #22D4FD; */
+    /* --cor-hover: #272727; */
+
+    --fonte-primaria: "Inter", sans-serif;
+}
+
+::placeholder {
+    color: var(--cor-secundaria);
+    opacity: 1; /* Override the default opacity */
+}
+
+/* Resetando o css */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;  /* Ocupar 100% da tela */
+    /* Você quer que a imagem, elemento filho, “encolha” e se adeque ao conteúdo, elemento pai. */
+    box-sizing: border-box; /* Evita que os elementos filhos sejam maiores, ou saiam do elemento pai*/
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+
+}
+
+.hidden{
+    display: none !important;
+}
+
+.cabecalho{
+    padding: 3% 3%;
+}
+
+.apresentacao{
+    display: flex;
+}
+
+.apresentacao__conteudo__entrada{
+    width: 70%;
+    padding: 5% 5%;
+}
+
+.apresentacao__conteudo__entrada__input{
+    width: 100%;
+    height: 288px;
+    background-color: var(--cor-primaria);
+    border: none; /* Remove the border */
+    outline: none; /* Remove the outline */
+    box-shadow: none;
+    font-size: 2rem;
+    color: var(--cor-secundaria);
+    vertical-align: top;
+    resize: none;
+}
+
+.apresentacao__links{
+    display: flex;
+    align-items: center;
+    gap: 24px; /* adiciona espaços iguais entre cada elemento na vertical pois o flex está column*/
+
+}
+
+.apresentacao__links__navegacao{
+    width: 50%;
+    text-align: center;
+    border-radius: 24px;
+    border: 1px solid var(--cor-secundaria);    
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    /* gap: 16px; adiciona espaços iguais entre cada elemento na horizontal pois o flex está no seu padrão (row - linha) */
+
+}
+
+.botao__azul{
+    background-color: var(--cor-secundaria);
+    color: #fff;
+}
+
+.botao__branco{
+    background-color: #D8DFE8;
+    color: var(--cor-secundaria);
+}
+
+.apresentacao__conteudo__saida{
+    width: 30%;
+    padding-right: 10%;
+}
+
+.apresentacao__conteudo__saida__img{
+    width: 100%;
+    height: 90%;
+    border-radius: 24px;
+    border: 1px solid var(--cor-secundaria);    
+    text-align: center;
+    background-color: #fff;
+}
+
+.apresentacao__conteudo__saida__input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    border-radius: 24px;
+    border: 1px solid var(--cor-secundaria);    
+    background-color: #fff;
+    padding: 5%;
+
+}
+
+.apresentacao__conteudo__saida__input textarea{
+    width: 100%;
+    height: inherit;
+    border: none;
+    vertical-align: top;
+    resize: none;
+    font-size: 1.5rem;
+    color: #495057;
+}
+
+.apresentacao__conteudo__saida__input textarea:focus{
+    border: none; /* Ensure no border on focus */
+    outline: none; /* Ensure no outline on focus */
+    box-shadow: none;
+}
